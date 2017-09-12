@@ -14,6 +14,8 @@ gulp clean
 
 gulp bundle
 
+gulp --tasks
+
 nvm ls available
 
 
