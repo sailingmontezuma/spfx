@@ -5,15 +5,15 @@
 
 
 npm install -g @microsoft/generator-sharepoint
- 
+npm list -g --depth 0
+npm list -g --depth=0
+npm view @microsoft/generator-sharepoint
+npm outdated -g
+
 gulp trust-dev-cert
-
 gulp serve
-
 gulp clean
-
 gulp bundle
-
 gulp --tasks
 
 nvm ls available
