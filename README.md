@@ -5,6 +5,7 @@
 
 
 npm install -g @microsoft/generator-sharepoint
+npm install -g @microsoft/generator-sharepoint@1.0.2
 npm list -g --depth 0
 npm list -g --depth=0
 npm view @microsoft/generator-sharepoint
@@ -26,3 +27,7 @@ nvm ls available
 web site feature to activate:
 Site Pages
 Allows users to add new site pages to a site
+
+yo @microsoft/sharepoint
+
+
