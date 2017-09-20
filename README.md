@@ -10,6 +10,8 @@ npm list -g --depth 0
 npm list -g --depth=0
 npm view @microsoft/generator-sharepoint
 npm outdated -g
+npm update -g
+npm update -g jshint
 
 gulp trust-dev-cert
 gulp serve
