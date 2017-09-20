@@ -13,6 +13,7 @@ npm outdated -g
 
 gulp trust-dev-cert
 gulp serve
+gulp serve --nobrowser
 gulp clean
 gulp bundle
 gulp --tasks
@@ -29,5 +30,8 @@ Site Pages
 Allows users to add new site pages to a site
 
 yo @microsoft/sharepoint
+yo @microsoft/sharepoint --skip-install
+
+
 
 
