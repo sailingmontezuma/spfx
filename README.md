@@ -48,3 +48,8 @@ dist folder: source-map-explorer hello-world.bundle.js hello-world.bundle.js.map
 
 code .
 explorer .
+
+@microsoft/sp-core-library
+
+
+
