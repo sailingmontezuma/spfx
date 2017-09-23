@@ -21,6 +21,7 @@ npm update -g jshint
 npm run test
 npm run clean
 npm prune
+npm link gulp
 
 gulp trust-dev-cert
 gulp serve
