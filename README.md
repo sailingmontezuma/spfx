@@ -1,8 +1,3 @@
-# spfx
-
-
-# commands
-
 
 npm install -g @microsoft/generator-sharepoint
 npm install -g @microsoft/generator-sharepoint@1.0.2
@@ -47,6 +42,8 @@ Allows users to add new site pages to a site
 yo @microsoft/sharepoint
 yo @microsoft/sharepoint --skip-install
 
+
+dist folder: source-map-explorer hello-world.bundle.js hello-world.bundle.js.map
 
 
 code .
