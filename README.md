@@ -18,6 +18,7 @@ npm run test
 npm run clean
 npm prune
 npm i react
+npm install @types/jquery@2.048 @types/angular@1.6.14 --save-dev
 
 gulp trust-dev-cert
 gulp serve
