@@ -1,0 +1,11 @@
+{
+  "solution": {
+    "name": "wp-1-client-side-solution",
+    "id": "46d92c32-2141-4d83-8fa0-f332c9dfd026",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": false
+  },
+  "paths": {
+    "zippedPackage": "solution/wp-1.sppkg"
+  }
+}
