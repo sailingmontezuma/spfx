@@ -1,6 +1,0 @@
-{
-  "workingDir": "./temp/deploy/",
-  "account": "<!-- STORAGE ACCOUNT NAME -->",
-  "container": "wp-1",
-  "accessKey": "<!-- ACCESS KEY -->"
-}

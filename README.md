@@ -44,7 +44,8 @@ yo @microsoft/sharepoint
 yo @microsoft/sharepoint --skip-install
 
 
-dist folder: source-map-explorer hello-world.bundle.js hello-world.bundle.js.map
+dist folder execution context:
+source-map-explorer hello-world.bundle.js hello-world.bundle.js.map
 
 
 code .
