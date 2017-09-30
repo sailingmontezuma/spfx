@@ -31,6 +31,7 @@ gulp package-solution --ship
 nvm ls available
 
 git clear -f -d
+git fetch && git checkout dev
 
 /_layouts/15/workbench.aspx
 
