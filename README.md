@@ -52,7 +52,7 @@ code .
 explorer .
 
 
-C:\apps\nuget.exe restore "C:\bitbucket\temp\rb.digital.docconverter\RB.GLDS.DocConverter.Api.sln"
+C:\apps\nuget.exe restore "C:\bb\RB.GLDS.DocConverter.Api.sln"
 msbuild RB.GLDS.DocConverter.Api.sln
 
 Install-Package Autofac.WebApi2 -Version 4.1.0 
