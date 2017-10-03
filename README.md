@@ -1,9 +1,10 @@
 
 npm install -g @microsoft/generator-sharepoint
 npm install -g @microsoft/generator-sharepoint@1.0.2
-npm install -g source-map-explorer
+npm install -g source-map-explorer newman
 npm i react
 npm install @types/jquery@2.048 @types/angular@1.6.14 --save-dev
+ 
 
 npm list -g --depth 0
 npm list -g --depth=0
@@ -53,6 +54,7 @@ explorer .
 
 
 C:\apps\nuget.exe restore "C:\bb\RB.GLDS.DocConverter.Api.sln"
+Update-Package -Id <package_name> –reinstall 
 msbuild RB.GLDS.DocConverter.Api.sln
 
 Install-Package Autofac.WebApi2 -Version 4.1.0 
