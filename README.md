@@ -2,6 +2,7 @@
 npm install -g @microsoft/generator-sharepoint
 npm install -g @microsoft/generator-sharepoint@1.0.2
 npm install -g source-map-explorer newman
+npm install newman --global;
 npm i react
 npm install @types/jquery@2.048 @types/angular@1.6.14 --save-dev
  
