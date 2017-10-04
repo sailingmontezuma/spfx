@@ -60,6 +60,5 @@ msbuild RB.GLDS.DocConverter.Api.sln
 
 Install-Package Autofac.WebApi2 -Version 4.1.0 
 
-
-
+newman run collections\TestCollection1.postman_collectionAzure.json -n 18
 
