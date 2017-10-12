@@ -30,7 +30,7 @@ gulp package-solution --ship
 
 nvm ls available
 
-
+git clear -f -d
 
 /_layouts/15/workbench.aspx
 
