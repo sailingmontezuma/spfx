@@ -20,15 +20,26 @@ npm run clean
 npm prune
 npm link gulp
 
+
+
+gulp build
+>>output goes to /lib folder
 gulp trust-dev-cert
 gulp serve
 gulp serve --nobrowser
 gulp clean
 gulp bundle
 gulp bundle --ship
+>>output goes to /dist folder
+>>creates manifest json file
+>>creates /temp/deploy folder
+>>multiple bundles can be created from the same sharepoint projects
 gulp --tasks
 gulp -T
 gulp package-solution --ship
+gulp deploy-azure-storage
+>>run config based on content of write-manifest.json file
+1. build 2. bundle
 
 nvm ls available
 
@@ -62,3 +73,6 @@ Install-Package Autofac.WebApi2 -Version 4.1.0
 
 newman run collections\TestCollection1.postman_collectionAzure.json -n 18
 
+SharePoint Online Management Tool -  Powershell commands
+
+write-manifest.json
