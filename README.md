@@ -46,7 +46,7 @@ git clean -f -d
 git fetch && git checkout dev
 
 /_layouts/15/workbench.aspx
-
+/_layouts/workbench.aspx
 
 web site feature to activate:
 Site Pages
