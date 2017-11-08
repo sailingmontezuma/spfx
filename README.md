@@ -3,9 +3,9 @@ npm install -g @microsoft/generator-sharepoint
 npm install -g @microsoft/generator-sharepoint@1.0.2
 npm install -g source-map-explorer newman
 npm install newman --global;
+npm install --production   (downloads only dependencies modules)
 npm i react
 npm install @types/jquery@2.048 @types/angular@1.6.14 --save-dev
- 
 
 npm list -g --depth 0
 npm list -g --depth=0
@@ -19,7 +19,6 @@ npm run test
 npm run clean
 npm prune
 npm link gulp
-
 
 
 gulp build
