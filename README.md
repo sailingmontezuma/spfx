@@ -101,3 +101,5 @@ https://publiccdn.sharepointonline.com/<tenant host name>/sites/site/library/fol
 
 ?reset=true
 resets cache and cookies
+
+this.context.pageContext
