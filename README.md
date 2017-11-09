@@ -19,7 +19,7 @@ npm run test
 npm run clean
 npm prune
 npm link gulp
-
+npm-shrinkwrap
 
 gulp build
 >>output goes to /lib folder
