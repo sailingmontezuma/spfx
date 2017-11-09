@@ -84,10 +84,14 @@ application extensions:
 
 
 $c = Get-Credential
-Connect-SPOService -Url https://nowakowski-admin.sharepoint.com/  $c 
+Connect-SPOService -Url https://nnn-admin.sharepoint.com/  $c 
 Get-SPOTenantCdnEnabled -CdnType Public
 Get-SPOTenantCdnOrigins -CdnType Public
 Get-SPOTenantCdnPolicies -CdnType Public
 
 Set-SPOTenantCdnEnabled -CdnType Public
 Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */cdn
+
+https://publiccdn.sharepointonline.com/<tenant host name>/sites/site/library/folder
+"cdnBasePath": "https://publiccdn.sharepointonline.com/nnn.sharepoint.com/sites/dev/CDN/helloworld"
+
