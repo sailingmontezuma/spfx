@@ -75,3 +75,6 @@ newman run collections\TestCollection1.postman_collectionAzure.json -n 18
 SharePoint Online Management Tool -  Powershell commands
 
 write-manifest.json
+
+application extensions:
+?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"dcd9de29-ac65-4fd6-93e6-debffba1cebc":{"location":"ClientSideExtension.ApplicationCustomizer","properties":{"testMessage":"Hello as property!"}}}
