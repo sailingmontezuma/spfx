@@ -95,4 +95,5 @@ Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */cdn
 https://publiccdn.sharepointonline.com/<tenant host name>/sites/site/library/folder
 "cdnBasePath": "https://publiccdn.sharepointonline.com/nnn.sharepoint.com/sites/dev/CDN/helloworld"
 
-           
+?reset=true
+resets cache and cookies
