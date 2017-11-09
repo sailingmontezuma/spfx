@@ -78,3 +78,13 @@ write-manifest.json
 
 application extensions:
 ?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"dcd9de29-ac65-4fd6-93e6-debffba1cebc":{"location":"ClientSideExtension.ApplicationCustomizer","properties":{"testMessage":"Hello as property!"}}}
+
+
+?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"151002e5-1c8f-4553-a91c-c57784b3cf38":{"location":"ClientSideExtension.ApplicationCustomizer","properties":{"Top":"top area of the page", "Bottom": "Bottom are of the page"}}}
+
+
+$c = Get-Credential
+Connect-SPOService -Url https://nowakowski-admin.sharepoint.com/  $c 
+Get-SPOTenantCdnEnabled -CdnType Public
+Get-SPOTenantCdnOrigins -CdnType Public
+Get-SPOTenantCdnPolicies -CdnType Public
