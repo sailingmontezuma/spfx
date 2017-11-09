@@ -81,7 +81,11 @@ application extensions:
 
 
 ?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"151002e5-1c8f-4553-a91c-c57784b3cf38":{"location":"ClientSideExtension.ApplicationCustomizer","properties":{"Top":"top area of the page", "Bottom": "Bottom are of the page"}}}
+
 ?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&fieldCustomizers={"Percent":{"id":"7b5f679d-3952-442d-8a07-ca7b5612bc1b","properties":{"sampleText":"Hello!!!"}}}
+
+?loadSpfx=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"71ddd22c-6fdb-40a5-a3da-07f5ce917f35":{"location":"ClientSideExtension.ListViewCommandSet.CommandBar","properties":{"sampleTextOne":"One item is selected in the list.","sampleTextTwo":"This command is always visible."}}}
+
 
 $c = Get-Credential
 Connect-SPOService -Url https://nnn-admin.sharepoint.com/  $c 
