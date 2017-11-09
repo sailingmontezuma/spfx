@@ -88,3 +88,6 @@ Connect-SPOService -Url https://nowakowski-admin.sharepoint.com/  $c
 Get-SPOTenantCdnEnabled -CdnType Public
 Get-SPOTenantCdnOrigins -CdnType Public
 Get-SPOTenantCdnPolicies -CdnType Public
+
+Set-SPOTenantCdnEnabled -CdnType Public
+Add-SPOTenantCdnOrigin -CdnType Public -OriginUrl */cdn
