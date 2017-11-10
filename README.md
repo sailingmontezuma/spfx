@@ -29,6 +29,7 @@ gulp serve --nobrowser
 gulp clean
 gulp bundle
 gulp bundle --ship
+gulp --ship
 >>output goes to /dist folder
 >>creates manifest json file
 >>creates /temp/deploy folder
@@ -103,3 +104,14 @@ https://publiccdn.sharepointonline.com/<tenant host name>/sites/site/library/fol
 resets cache and cookies
 
 this.context.pageContext
+
+
+
+AZURE CDN
+
+new storage account endpoint spfxsamples.blob.core.windows.net.
+http://spfxsamples.azureedge.net/helloworld-webpart/
+{
+  "cdnBasePath": "https://spfxsamples.azureedge.net/helloworld-webpart/"
+} 
+The CDN base path is the CDN endpoint with the BLOB container.
