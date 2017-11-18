@@ -14,6 +14,8 @@ npm install babel-preset-react@6.16 --save-dev
 npm install babel-preset-latest@6.16.0 --save-dev
 npm install babel-preset-stage-0@6.16.0 --save-dev
 npm install -g babel-cli@6.18.0
+npm install webpack@1.13.3 --save-dev
+
 
 npm list -g --depth 0
 npm list -g --depth=0
