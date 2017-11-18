@@ -9,7 +9,11 @@ npm install @types/jquery@2.048 @types/angular@1.6.14 --save-dev
 npm install @types/jquery@2.048 @types/angular@1.6.14 --save-exact
 npm install -g httpster
 httpster -d ./dist -p 3000
-
+npm install babel-cli@6.18.0 --save-dev
+npm install babel-preset-react@6.16 --save-dev
+npm install babel-preset-latest@6.16.0 --save-dev
+npm install babel-preset-stage-0@6.16.0 --save-dev
+npm install -g babel-cli@6.18.0
 
 npm list -g --depth 0
 npm list -g --depth=0
@@ -17,6 +21,7 @@ npm ls -g --depth=0
 
 npm view @microsoft/generator-sharepoint
 npm outdated -g
+npm outdated
 npm update -g
 npm update -g jshint
 npm run test
@@ -24,6 +29,8 @@ npm run clean
 npm prune
 npm link gulp
 npm-shrinkwrap
+
+babel  ./src/index.js  --out-file ./dist/bundle.js
 
 gulp build
 >>output goes to /lib folder
