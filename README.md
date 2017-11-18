@@ -57,6 +57,9 @@ gulp deploy-azure-storage
 
 ./node_modules/.bin/webpack
 
+"scripts": { "start": "httpster -d ./dist -p 3000"  },
+"scripts": { "start": " ./node_modules/.bin/webpack-dev-server" },
+
 nvm ls available
 
 git clean -f -d
