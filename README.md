@@ -7,6 +7,9 @@ npm install --production   (downloads only dependencies modules)
 npm i react
 npm install @types/jquery@2.048 @types/angular@1.6.14 --save-dev
 npm install @types/jquery@2.048 @types/angular@1.6.14 --save-exact
+npm install -g httpster
+httpster -d ./dist -p 3000
+
 
 npm list -g --depth 0
 npm list -g --depth=0
