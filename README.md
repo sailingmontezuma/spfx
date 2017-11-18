@@ -15,7 +15,8 @@ npm install babel-preset-latest@6.16.0 --save-dev
 npm install babel-preset-stage-0@6.16.0 --save-dev
 npm install -g babel-cli@6.18.0
 npm install webpack@1.13.3 --save-dev
-
+npm install webpack-dev-server@1.16.2  --save-dev
+npm install babel-loader@6.2.5 --save-dev
 
 npm list -g --depth 0
 npm list -g --depth=0
@@ -53,6 +54,8 @@ gulp package-solution --ship
 gulp deploy-azure-storage
 >>run config based on content of write-manifest.json file
 1. build 2. bundle
+
+./node_modules/.bin/webpack
 
 nvm ls available
 
