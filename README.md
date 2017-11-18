@@ -18,6 +18,8 @@ npm install webpack@1.13.3 --save-dev
 npm install webpack-dev-server@1.16.2  --save-dev
 npm install babel-loader@6.2.5 --save-dev
 npm install json-loader@0.5.4 --save-dev
+npm install autoprefixer-loader@3.2.0 --save-dev
+npm install css-loader@0.25.0 --save-dev
 
 npm list -g --depth 0
 npm list -g --depth=0
@@ -33,6 +35,7 @@ npm run clean
 npm prune
 npm link gulp
 npm-shrinkwrap
+npm cache clean
 
 babel  ./src/index.js  --out-file ./dist/bundle.js
 
