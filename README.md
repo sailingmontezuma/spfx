@@ -62,6 +62,8 @@ gulp deploy-azure-storage
 1. build 2. bundle
 
 ./node_modules/.bin/webpack
+./node_modules/.bin/webpack src/index.js dist/bundle.js
+./node_modules/.bin/webpack --config webpack.config.js
 
 "scripts": { "start": "httpster -d ./dist -p 3000"  },
 "scripts": { "start": " ./node_modules/.bin/webpack-dev-server" },
