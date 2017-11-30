@@ -1,0 +1,22 @@
+gulp build
+>>output goes to /lib folder
+gulp trust-dev-cert
+gulp serve
+gulp serve --nobrowser
+gulp clean
+gulp bundle
+gulp bundle --ship
+gulp --ship
+>>output goes to /dist folder
+>>creates manifest json file
+>>creates /temp/deploy folder
+>>multiple bundles can be created from the same sharepoint projects
+gulp --tasks
+gulp -T
+gulp package-solution --ship
+gulp deploy-azure-storage
+>>run config based on content of write-manifest.json file
+1. build 2. bundle
+
+
+

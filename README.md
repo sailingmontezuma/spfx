@@ -1,65 +1,6 @@
-
-npm install -g @microsoft/generator-sharepoint
-npm install -g @microsoft/generator-sharepoint@1.0.2
-npm install -g source-map-explorer newman
-npm install newman --global;
-npm install --production   (downloads only dependencies modules)
-npm i react
-npm install @types/jquery@2.048 @types/angular@1.6.14 --save-dev
-npm install @types/jquery@2.048 @types/angular@1.6.14 --save-exact
-npm install -g httpster
-httpster -d ./dist -p 3000
-npm install babel-cli@6.18.0 --save-dev
-npm install babel-preset-react@6.16 --save-dev
-npm install babel-preset-latest@6.16.0 --save-dev
-npm install babel-preset-stage-0@6.16.0 --save-dev
-npm install babel-preset-env@1.6.0 --save-dev
-npm install -g babel-cli@6.18.0
-npm install webpack@1.13.3 --save-dev
-npm install webpack-dev-server@1.16.2  --save-dev
-npm install babel-loader@6.2.5 --save-dev
-npm install json-loader@0.5.4 --save-dev
-npm install autoprefixer-loader@3.2.0 --save-dev
-npm install css-loader@0.25.0 --save-dev
-npm install style-loader@0.13.1 --save-dev
-
-npm list -g --depth 0
-npm list -g --depth=0
-npm ls -g --depth=0
-
-npm view @microsoft/generator-sharepoint
-npm outdated -g
-npm outdated
-npm update -g
-npm update -g jshint
-npm run test
-npm run clean
-npm prune
-npm link gulp
-npm-shrinkwrap
-npm cache clean
-
 babel  ./src/index.js  --out-file ./dist/bundle.js
 
-gulp build
->>output goes to /lib folder
-gulp trust-dev-cert
-gulp serve
-gulp serve --nobrowser
-gulp clean
-gulp bundle
-gulp bundle --ship
-gulp --ship
->>output goes to /dist folder
->>creates manifest json file
->>creates /temp/deploy folder
->>multiple bundles can be created from the same sharepoint projects
-gulp --tasks
-gulp -T
-gulp package-solution --ship
-gulp deploy-azure-storage
->>run config based on content of write-manifest.json file
-1. build 2. bundle
+
 
 ./node_modules/.bin/webpack
 ./node_modules/.bin/webpack src/index.js dist/bundle.js
@@ -142,3 +83,7 @@ http://spfxsamples.azureedge.net/helloworld-webpart/
   "cdnBasePath": "https://spfxsamples.azureedge.net/helloworld-webpart/"
 } 
 The CDN base path is the CDN endpoint with the BLOB container.
+
+
+
+
