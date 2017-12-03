@@ -23,6 +23,7 @@ npm install css-loader@0.25.0 --save-dev
 npm install style-loader@0.13.1 --save-dev
 npm i -D webpack@2.2.0
 npm i webpack-dev-server@2.2.0 -D
+npm i -D rimraf
 
 npm list -g --depth 0
 npm list -g --depth=0
