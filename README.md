@@ -5,6 +5,8 @@ babel  ./src/index.js  --out-file ./dist/bundle.js
 ./node_modules/.bin/webpack
 ./node_modules/.bin/webpack src/index.js dist/bundle.js
 ./node_modules/.bin/webpack --config webpack.config.js
+webpack ./src/app.js ./dist/app.bundle.js -p
+
 
 "scripts": { "start": "httpster -d ./dist -p 3000"  },
 "scripts": { "start": " ./node_modules/.bin/webpack-dev-server" },
