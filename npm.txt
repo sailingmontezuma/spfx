@@ -27,6 +27,8 @@ npm list -g --depth=0
 npm ls -g --depth=0
 
 npm view @microsoft/generator-sharepoint
+npm view webpack versions
+npm view webpack versions --json
 npm outdated -g
 npm outdated
 npm update -g
