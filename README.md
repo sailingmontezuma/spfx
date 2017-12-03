@@ -3,6 +3,9 @@ babel  ./src/index.js  --out-file ./dist/bundle.js
 rimraf ./dist/* 
 "prod": "npm run clear && webpack -p"
 
+var isProd = process.env.NODE_ENV === 'production';
+
+
 ./node_modules/.bin/webpack
 ./node_modules/.bin/webpack src/index.js dist/bundle.js
 ./node_modules/.bin/webpack --config webpack.config.js
