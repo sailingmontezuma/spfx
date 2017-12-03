@@ -1,6 +1,7 @@
 babel  ./src/index.js  --out-file ./dist/bundle.js
 
-
+rimraf ./dist/* 
+"prod": "npm run clear && webpack -p"
 
 ./node_modules/.bin/webpack
 ./node_modules/.bin/webpack src/index.js dist/bundle.js
