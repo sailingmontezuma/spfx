@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sailingmontezuma/spfx#readme",
   "dependencies": {
-    "babel-runtime": "^6.26.0"
+    "babel-runtime": "^6.26.0"  
+    
   }
 }
