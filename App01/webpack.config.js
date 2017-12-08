@@ -3,10 +3,10 @@ var path = require('path');
 
 module.exports = {
     entry:
-        ["./src/global.js", "./src/app.js"]
+        {global:"./src/global.js", app: "./src/app.js"}
     ,
     output: {
-        filename: "./build/bundle.js"
+        filename: "./build/bundle[name].js"
     },
     watch: false,
     module: {
