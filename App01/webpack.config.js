@@ -1,7 +1,7 @@
 
 var path = require('path');
 
-module.exports = {
+var config = {
     entry:
         {global:"./src/global.js", app: "./src/app.js"}
     ,
@@ -18,6 +18,7 @@ module.exports = {
                 include: [
                     path.resolve(__dirname, "src"),
                 ],
+                exclude: /(node_modules|bower_components)/,
                 // Only run `.js` and `.jsx` files through Babel
                 test: /\.jsx?$/,
                 // Options to configure babel with
@@ -28,9 +29,10 @@ module.exports = {
                     //presets: ['es2015', 'stage-0', 'react'],
                 }
             }
+            
         ]
     },
     
 }
 
-
+module.exports = config;
