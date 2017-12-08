@@ -4,15 +4,13 @@
 webpack ./src/app.js ./dist/app.bundle.js -p
 webpack ./src/app.js ./dist/app.bundle.js -p --watch
 node_modules/.bin/webpack
-
+webpack --watch
 
 node_modules/.bin/webpack app/index.js build/index.js
 
-
+webpack --config webpack.config.js
 
 --------------------------------------------------
-
-
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
@@ -38,7 +36,148 @@ module.exports = {
     }),
   ],
 };
+--------------------------------------------------
+const path = require('path');
 
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+};
+--------------------------------------------------
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+ plugins: [ new CleanWebpackPlugin(['dist']),   new HtmlWebpackPlugin({   title: 'Output Management'   })    ]
+--------------------------------------------------
+module.exports = {
+  entry: "./app.js",
+  output: {
+    filename: "bundle.js"
+  }, 
+  watch: true
+}
+--------------------------------------------------
+module.exports = {
+  entry: ["./global.js", "./app.js"],
+  output: {
+    filename: "bundle.js"
+  }
+}
+--------------------------------------------------
+module.exports = {
+ entry: ["./global.js" , "./app.js"],
+ output: {
+   filename: "bundle.js"
+ },
+ module: {
+   loaders: [
+     {
+       test: /\.es6$/,
+       exclude: /node_modules/,
+       loader: 'babel-loader',
+       query: {
+         presets: ['react', 'es2015'] 
+       }
+     }
+   ]
+ },
+ resolve: {
+   extensions: ['', '.js', '.es6']
+ },
+}
+--------------------------------------------------
+module.exports = {
+ entry: ["./global.js" , "./app.js"],
+ output: {
+   filename: "bundle.js"
+ },
+ module: {
+   preLoaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'jshint-loader'
+      }
+   ],
+   loaders: [
+     {
+       test: /\.es6$/,
+       exclude: /node_modules/,
+       loader: 'babel-loader',
+       query: {
+          cacheDirectory: true, 
+          presets: ['react', 'es2015'] 
+       }
+      }
+   ]
+ },
+ resolve: {
+   extensions: ['', '.js', '.es6']
+ }
+}
+--------------------------------------------------
+var WebpackStripLoader = require('strip-loader');
+var devConfig = require('./webpack.config.js');
+
+var stripLoader = {
+ test: [/\.js$/, /\.es6$/],
+ exclude: /node_modules/,
+ loader: WebpackStripLoader.loader('console.log')
+}
+
+devConfig.module.loaders.push(stripLoader);
+
+module.exports = devConfig;
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
+
+--------------------------------------------------
 
 --------------------------------------------------
 
