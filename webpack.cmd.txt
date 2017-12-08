@@ -1,0 +1,11 @@
+./node_modules/.bin/webpack
+./node_modules/.bin/webpack src/index.js dist/bundle.js
+./node_modules/.bin/webpack --config webpack.config.js
+webpack ./src/app.js ./dist/app.bundle.js -p
+webpack ./src/app.js ./dist/app.bundle.js -p --watch
+node_modules/.bin/webpack
+webpack --watch
+
+node_modules/.bin/webpack app/index.js build/index.js
+
+webpack --config webpack.config.js
