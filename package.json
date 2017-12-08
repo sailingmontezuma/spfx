@@ -1,0 +1,22 @@
+{
+  "name": "spfx",
+  "version": "1.0.0",
+  "description": "babel  ./src/index.js  --out-file ./dist/bundle.js",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailingmontezuma/spfx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sailingmontezuma/spfx/issues"
+  },
+  "homepage": "https://github.com/sailingmontezuma/spfx#readme",
+  "dependencies": {
+    "babel-runtime": "^6.26.0"
+  }
+}
