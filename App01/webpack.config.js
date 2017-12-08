@@ -8,7 +8,7 @@ module.exports = {
     output: {
         filename: "./build/bundle.js"
     },
-    watch: true,
+    watch: false,
     module: {
         loaders: [
             {
@@ -21,6 +21,7 @@ module.exports = {
                 test: /\.jsx?$/,
                 // Options to configure babel with
                 query: {
+                    cacheDirectory: true,
                     plugins: ['transform-runtime']
                     //,
                     //presets: ['es2015', 'stage-0', 'react'],
