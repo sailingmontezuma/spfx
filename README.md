@@ -1,4 +1,5 @@
-babel  ./src/index.js  --out-file ./dist/bundle.js
+babel ./src/index.js  --out-file ./dist/bundle.js
+babel app.js --presets stage-0 -o output.js
 
 rimraf ./dist/* 
 "prod": "npm run clear && webpack -p"
