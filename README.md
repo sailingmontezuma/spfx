@@ -90,6 +90,7 @@ http://spfxsamples.azureedge.net/helloworld-webpart/
 } 
 The CDN base path is the CDN endpoint with the BLOB container.
 
+@microsoft/sp-core-library
 
 
 
