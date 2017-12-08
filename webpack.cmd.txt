@@ -9,3 +9,5 @@ webpack --watch
 node_modules/.bin/webpack app/index.js build/index.js
 
 webpack --config webpack.config.js
+
+
