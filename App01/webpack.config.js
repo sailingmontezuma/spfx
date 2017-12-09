@@ -5,6 +5,7 @@ var env = process.env.WEBPACK_ENV;
 var plugins = [];
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 plugins.push(new UglifyJsPlugin({minimize:true}))
+//console.log(process.env);
 
 var config = {
     entry:
