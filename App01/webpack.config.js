@@ -10,7 +10,8 @@ plugins.push(new UglifyJsPlugin({minimize:true}))
 var config = {
     //context: __dirname + '/src',
     entry:
-        {global:"./src/global.js", app: "./src/app.js"}
+        {global:"./src/global.js", app: "./src/app.js",
+        app2: "./src/app2.js"}
     ,
     output: {
         filename: "./build/bundle[name].js"
