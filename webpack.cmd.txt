@@ -10,4 +10,8 @@ node_modules/.bin/webpack app/index.js build/index.js
 
 webpack --config webpack.config.js
 
-
+ 
+"scripts": {
+  "start": "webpack-dev-server",
+  "build": "NODE_ENV=production webpack -p --config webpack.config.js"
+}
