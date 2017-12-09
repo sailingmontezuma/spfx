@@ -1,5 +1,10 @@
 
 var path = require('path');
+var webpack = require("webpack");
+var env = process.env.WEBPACK_ENV;
+var plugins = [];
+var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
+plugins.push(new UglifyJsPlugin({minimize:true}))
 
 var config = {
     entry:
@@ -9,7 +14,7 @@ var config = {
         filename: "./build/bundle[name].js"
     },
     watch: false,
-    devtool: 'source-map',
+    //devtool: 'source-map',
     module: {
         loaders: [
             {
@@ -32,7 +37,7 @@ var config = {
             
         ]
     },
-    
+    plugins: plugins    
 }
 
 module.exports = config;
