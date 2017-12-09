@@ -8,6 +8,7 @@ plugins.push(new UglifyJsPlugin({minimize:true}))
 //console.log(process.env);
 
 var config = {
+    //context: __dirname + '/src',
     entry:
         {global:"./src/global.js", app: "./src/app.js"}
     ,
@@ -15,7 +16,7 @@ var config = {
         filename: "./build/bundle[name].js"
     },
     watch: false,
-    //devtool: 'source-map',
+    devtool: 'eval-source-map',
     module: {
         loaders: [
             {
