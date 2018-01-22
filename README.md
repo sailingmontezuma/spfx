@@ -1,5 +1,6 @@
 tsc --version
 tsc main.ts && node main.js
+tsc --init
 
 
 babel ./src/index.js  --out-file ./dist/bundle.js
