@@ -9,6 +9,7 @@
  
 
     <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="ethjs-account.min.js"></script>
 
 </head>
 <body>
@@ -32,20 +33,79 @@
 console.log("ed");
     var Web3 = require('web3');
 
-var web3 = new Web3(new Web3.providers.HttpProvider());
-//var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
-var version = web3.version.api;
-    console.log("fe");
-$.getJSON('http://api-ropsten.etherscan.io/api?module=account&action=txlist&address=0x425c813B54eea8c4fBf307cAb6c154Ada64aF0b4&startblock=0&endblock=99999999&sort=asc&apikey=2K3N9UGBGSTAYGJJIZ9FJGV7JVTUQ36KVS', function (data) {
+//var web3 = new Web3(new Web3.providers.HttpProvider());
+//var web3 = new Web3(new Web3.providers.HttpProvider
+var web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io/'));
+
+//const generate = require('ethjs-account').generate;
+
+//var Eth = require('web3-eth');
+////if(!web3.isConnected()) {
+  
+  // show some dialog to ask the user to start a node
+
+//} else {
+
+  // start web3 filters, calls, etc
+ 
+//}
+
+// var version = web3.version.api;
+//     console.log("fe");
+// $.getJSON('http://api-ropsten.etherscan.io/api?module=account&action=txlist&address=0x425c813B54eea8c4fBf307cAb6c154Ada64aF0b4&startblock=0&endblock=99999999&sort=asc&apikey=2K3N9UGBGSTAYGJJIZ9FJGV7JVTUQ36KVS', function (data) {
    
 
  
-        console.log(data );
+//         console.log(data );
             
-});
- 
+// });
+ /*
 
+function getTransactionsByAccount(myaccount, startBlockNumber, endBlockNumber) {
+  if (endBlockNumber == null) {
+    endBlockNumber = web3.eth.blockNumber;
+    console.log("Using endBlockNumber: " + endBlockNumber);
+  }
+  if (startBlockNumber == null) {
+    startBlockNumber = endBlockNumber - 1000;
+    console.log("Using startBlockNumber: " + startBlockNumber);
+  }
+  console.log("Searching for transactions to/from account \"" + myaccount + "\" within blocks "  + startBlockNumber + " and " + endBlockNumber);
 
+  for (var i = startBlockNumber; i <= endBlockNumber; i++) {
+    if (i % 1000 == 0) {
+      console.log("Searching block " + i);
+    }
+    var block = web3.eth.getBlock(i, true);
+    if (block != null && block.transactions != null) {
+      block.transactions.forEach( function(e) {
+        if (myaccount == "*" || myaccount == e.from || myaccount == e.to) {
+          console.log("  tx hash          : " + e.hash + "\n"
+            + "   nonce           : " + e.nonce + "\n"
+            + "   blockHash       : " + e.blockHash + "\n"
+            + "   blockNumber     : " + e.blockNumber + "\n"
+            + "   transactionIndex: " + e.transactionIndex + "\n"
+            + "   from            : " + e.from + "\n" 
+            + "   to              : " + e.to + "\n"
+            + "   value           : " + e.value + "\n"
+            + "   time            : " + block.timestamp + " " + new Date(block.timestamp * 1000).toGMTString() + "\n"
+            + "   gasPrice        : " + e.gasPrice + "\n"
+            + "   gas             : " + e.gas + "\n"
+            + "   input           : " + e.input);
+        }
+      })
+    }
+  }
+}
+*/
+//console.log(generate('892h@fs8sk^2h8s8shfs.jk39hsoi@hohskd..'));
+function checkAllBalances() { 
+ var i =0; 
+web3.eth.accounts.forEach( function(e){
+    console.log("  eth.accounts["+i+"]: " +  e + " \tbalance: " +    web3.fromWei(web3.eth.getBalance(e), "ether") + " ether"); 
+  i++; 
+ })
+};
 
     </script>
 

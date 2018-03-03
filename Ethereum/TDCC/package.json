@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "web3": "github:ethereum/web3.js"
+    "ethjs-account": "^0.1.4",
+    "web3": "^0.20.5"
   }
 }
