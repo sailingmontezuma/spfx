@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="main.css">
+ 
 
     <script src="./node_modules/web3/dist/web3.min.js"></script>
 
@@ -14,25 +14,39 @@
 <body>
     <div class="container">
 
-        <h1>Coursetro Instructor</h1>
-
-        <h2 id="instructor"></h2>
-
-        <label for="name" class="col-lg-2 control-label">Instructor Name</label>
-        <input id="name" type="text">
-
-        <label for="name" class="col-lg-2 control-label">Instructor Age</label>
+        <h1> tx </h1>
+ 
+        <label for="name" class="col-lg-2 control-label">  Age</label>
         <input id="age" type="text">
 
-        <button id="button">Update Instructor</button>
+        <button id="button">Update  </button>
 
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-    <script>
-       // Our future code here..
+
+
+<script>
+console.log("ed");
+    var Web3 = require('web3');
+
+var web3 = new Web3(new Web3.providers.HttpProvider());
+//var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
+var version = web3.version.api;
+    console.log("fe");
+$.getJSON('http://api-ropsten.etherscan.io/api?module=account&action=txlist&address=0x425c813B54eea8c4fBf307cAb6c154Ada64aF0b4&startblock=0&endblock=99999999&sort=asc&apikey=2K3N9UGBGSTAYGJJIZ9FJGV7JVTUQ36KVS', function (data) {
+   
+
+ 
+        console.log(data );
+            
+});
+ 
+
+
+
     </script>
 
 </body>
